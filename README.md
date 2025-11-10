@@ -29,7 +29,7 @@ Comparison. We compare Run-Lookahead and Run-Lazy-Lookahead on planning time, to
 
 ### 2.1 System Overview
 
-- Planner: a classical PDDL planner, an existing grid simulator (e.g., SimpleGrid or POSGGym GridWorld)
+- Planner: a classical PDDL planner, SimpleGrid (i.e., an existing grid simulator)
 - Acting: Run-Lookahead vs Run-Lazy-Lookahead
 - Metrics: planning time, total effort, plan length, replans
 
