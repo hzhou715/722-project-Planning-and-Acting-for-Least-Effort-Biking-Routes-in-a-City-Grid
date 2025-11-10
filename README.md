@@ -1,6 +1,6 @@
 # Type-1: Planning and Acting for Least-Effort Biking Routes in a City Grid
 
-**Course:** CMSC 722: AI Planning
+**Course:** CMSC 722: AI Planning<br>
 **Term:** Fall 2025  
 
 **Author:**  
@@ -8,8 +8,7 @@ Huan Zhou
 [hzhou715@umd.edu](mailto:hzhou715@umd.edu)
 
 **Instructor:**  
-Dr. Mak Roberts;
-
+Dr. Mak Roberts<br>
 David Chan
 
 ---
@@ -20,10 +19,10 @@ This project implements least-effort path planning in a SimpleGrid grid environm
 
 We will use an existing grid simulator (i.e., SimpleGrid) rather than building one from scratch. A small translator will export the simulator state to PDDL (objects, adjacency, per-cell costs) and import the resulting plan back into the simulator. This keeps modeling simple and leverages classical planners’ strength at path search. 
 
-### 2.1 Research question
+### 1.1 Research question
 How does terrain difficulty, represented as action cost, affect planning and acting performance?
 
-### 2.2 Comparison
+### 1.2 Comparison
 We compare Run-Lookahead and Run-Lazy-Lookahead on planning time, total effort, plan length, and number of replans. We expect Run-Lookahead to replan more and achieve lower total cost, while Run-Lazy-Lookahead plans faster but may yield higher cost.
 
 ---
