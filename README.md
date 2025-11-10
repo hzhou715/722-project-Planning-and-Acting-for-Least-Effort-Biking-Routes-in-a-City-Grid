@@ -32,6 +32,25 @@ Comparison. We compare Run-Lookahead and Run-Lazy-Lookahead on planning time, to
 - Planner: a classical PDDL planner, SimpleGrid (i.e., an existing grid simulator)
 - Acting: Run-Lookahead vs Run-Lazy-Lookahead
 - Metrics: planning time, total effort, plan length, replans
+  
+## 3. Framework
+722-project/
+├── env/                         # environment
+│   └── simple_grid_wrapper.py  # wrap SimpleGrid as planner
+├── planner/
+│   ├── pddl_translator.py      # convert environment to PDDL, write a translator from the simulator to PDDL
+│   └── planner_runner.py       # use Fast Downward
+├── agent/
+│   └── actor.py                # two acting strategies
+├── eval/
+│   └── metrics.py              # plan time、effort、length、replans
+├── figures/
+│   ├── demo_output.pdf         # result
+├── grid_costs_domain.pddl
+├── run_experiment.py
+├── README.md
+└── requirements.txt
+
 
 
 
