@@ -38,9 +38,10 @@ We compare Run-Lookahead and Run-Lazy-Lookahead on planning time, total effort, 
 ## 3. Framework
 722-project/  
 ├── env/                        # environment  
-│   └── simple_grid_wrapper.py  # wrap SimpleGrid as planner  
+│   └── simple_grid_wrapper.py  # Wraps the SimpleGrid-v0 environment and extracts agent, goal, wall, and terrain info.  
 ├── planner/  
-│   ├── pddl_translator.py      # convert environment to PDDL, write a translator from the simulator to PDDL  
+│   ├── pddl_translator.py      # Translates environment state into a PDDL problem file.  
+│   ├── grid_problem.pddl       #│   ├── 
 │   └── planner_runner.py       # use Fast Downward  
 ├── agent/  
 │   └── actor.py                # two acting strategies  
