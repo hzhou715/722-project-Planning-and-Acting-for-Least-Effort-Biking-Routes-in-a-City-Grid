@@ -50,6 +50,29 @@ We compare Run-Lookahead and Run-Lazy-Lookahead on planning time, total effort, 
 | `README.md`              | This file. Describes the project structure and usage.                    |
 
 
+## 4. Results Summary
+
+This project compares two acting strategies using a cost-aware 8×8 grid environment with terrain difficulty encoded as action cost:
+
+- **Run-Lookahead**: Replans before every action.
+- **Run-Lazy-Lookahead**: Replans only when the next action fails.
+
+### Fixed Map Test (from (0,0) to (7,7))
+
+| Strategy              | Total Steps | Total Cost | Replans |
+|-----------------------|-------------|------------|---------|
+| Run-Lookahead         | 14          | 34         | 0       |
+| Run-Lazy-Lookahead    | 14          | 34         | 0       |
+
+> Both strategies followed the same path under static terrain (no blocked cells), with identical cost and step count.
+
+---
+
+## 5. Future Work
+
+- Add blocked cells dynamically to simulate unforeseen obstacles.
+- Evaluate replanning behavior and recovery cost under disruptions.
+- Run batch sweeps across terrain seeds and map variants.
 
 
 
