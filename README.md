@@ -36,7 +36,7 @@ We compare Run-Lookahead and Run-Lazy-Lookahead on planning time, total effort, 
 - Metrics: planning time, total effort, plan length, replans
   
 ## 3. Framework
-## 📁 Code Overview
+## Code Overview
 
 | File                      | Purpose                                                                 |
 |---------------------------|-------------------------------------------------------------------------|
